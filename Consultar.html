@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>Consultar</title>
+	</h:head>
+	
+	<h:body>
+	
+		<h3>Consultar Pessoa</h3>
+		<h:form>
+			Nome:
+			<h:InputText binding="#{CadastroBean.nome}" /></br></br>
+			Cpf:
+			<h:InputText binding="#{CadastroBean.cpf}" /></br></br>
+			Idade:
+			<h:InputText binding="#{CadastroBean.idade}" /></br></br>
+			Telefone:
+			<h:InputText binding="#{CadastroBean.telefone}" /></br></br>
+			
+			<h:commandButton value="Consultar" binding="#{CadastroBean.consultar}" action="#{CadastroBean.consultar}"/>
+		</h:form>
+		</br></br>
+		</br></br>
+		<a href="Cadastro.html">Cadastrar</a>|<a href="Editar.html">Editar</a>
+	
+	</h:body>
+	
+</html>
