@@ -14,6 +14,9 @@ CREATE TABLE `telefone` (
   `ddd` char(2) DEFAULT NULL,
   `numero_telefone` char(9) DEFAULT NULL,
   PRIMARY KEY (`id_telefone`)
+  CONTRAINTS FOREIGN KEY()
 );
+
+ALTER TABLE telefone ADD CONSTRAINT fk_pessoa FOREIGN KEY (id_telefone) REFERENCES telefone( id_pessoa);
 
 
